@@ -16,14 +16,45 @@ header{
     width: 100%;
     border: solid red 1px;
 }
-.calendar-wrap .day{
+li{
+    list-style: none;
+}
+.calendar-wrap{
+    margin: 2em;
+}
+.calendar ol{
     display: grid;
     grid-template-rows: repeat(7, 1fr);
-    border-top: solid green 2px;
-    border-left: solid green 2px;
+
 }
-.day-content {
+.calendar .day{
+    border: solid black 1px;
+}
+.week{
     display: flex;
     flex-direction: row;
+}
+.post-preview{
+    display:flex;
+    flex-direction: row;
 
+    /* border: solid yellow 2px; */
+}
+.post-preview ol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.post-preview p{
+    display: flex;
+    align-items: center;
+    border: solid orange 1px;
+    
+}
+.post-preview img{
+    max-width: 100px;
+    max-height: 100px;
+}
+.date div{
+    border: solid green 2px;
 }
