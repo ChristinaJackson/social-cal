@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -18,23 +19,39 @@
     </Header>
 <div class="container">
     <div class="calendar-wrap">
+        <section class='calNav'>
+            <h3>November 24th - 30th </h3>
+            <div class ="cal-nav">
+            <div class = "cal-nav-left">
+                <button>Cal-icon</button>
+                <button> < </button>
+                <button id="today-button">Today</button>
+                <button> > </button>
+            </div>
+            <nav class = "cal-nav-right">
+                <button>Week</button>
+                <button>Day</button>
+             </nav>
+            </div>
+        </section>
         <div class='calendar'>
             <ol class = "week">
                 <li class=day>
                     <div class="date">
-                        <p>Sunday</p>
+                        <p>Sunday, November 24</p>
                     <div class='post-preview'>
                             <ol class="social-links">
                                 <li><button>I</button></li>
-                                <li><Button>F</Button></li>
+                                <li><button>F</button></li>
                                 <li><button>T</button></li>
                             </ol>
                             <img src="https://picsum.photos/id/222/400" alt="">
                             <div class='content'>
-                                <button>+/-</button>
+                                <!-- <button>+/-</button> -->
+                                <input type="checkbox" id="switch" /><label for="switch"></label>
                                 <p>Post time:</p>
                                 <p>This is some post content</p>
-                                <button>...</button>
+                                <button> ... </button>
                         </div>
                     </div>
                     <div class='post-preview'>
@@ -47,39 +64,67 @@
                         <div class='content'>
                                 <button>+/-</button>
                                 <p>This is some post content</p>
-                                <button>...</button>
+                                <button> ... </button>
                         </div>
                     </div>
                 </div>
                 </li>
                 <li class="day">
                     <div class="date">
-                        <p>Monday</p>
+                        <p>Monday, November 25</p>
                     </div>
                 </li>
                 <li class='day'>
                     <div class="date">
-                        <p>Tuesday</p>
+                        <p>Tuesday, November 26</p>
+                <div class='post-preview'>
+                        <ol class="social-links">
+                            <li><button>I</button></li>
+                            <li><Button>F</Button></li>
+                            <li><button>T</button></li>
+                        </ol>
+                        <img src="https://picsum.photos/id/222/400" alt="">
+                        <div class='content'>
+                            <button>+/-</button>
+                            <p>Post time:</p>
+                            <p>This is some post content</p>
+                            <button> ... </button>
+                    </div>
+                        </div>
+                        <div class='post-preview'>
+                                <ol class="social-links">
+                                    <li><button>I</button></li>
+                                    <li><Button>F</Button></li>
+                                    <li><button>T</button></li>
+                                </ol>
+                                <img src="https://picsum.photos/id/222/400" alt="">
+                                <div class='content'>
+                                    <button>+/-</button>
+                                    <p>Post time:</p>
+                                    <p>This is some post content</p>
+                                    <button> ... </button>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li class='day'>
                     <div class="date">
-                        <p>Wednesday</p>
+                        <p>Wednesday, November 27</p>
                     </div>
                 </li>
                 <li class='day'>
                     <div class="date">
-                        <p>Thursday</p>
+                        <p>Thursday, November 28</p>
                     </div>
                 </li>
                 <li class='day'>
                     <div class="date">
-                        <p>Friday</p>
+                        <p>Friday, November 29</p>
                     </div>
                 </li>
                 <li class='day'>
                     <div class="date">
-                        <p>Saturday</p>
+                        <p>Saturday, November 30</p>
                     </div>
                 </li>
             </ol>
@@ -88,5 +133,6 @@
 
 </div>
 <footer></footer>
+</footer>
 </body>
 </html>
