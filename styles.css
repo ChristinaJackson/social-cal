@@ -6,12 +6,10 @@
 
 body{
     font-family: "Muli", Helvetica, sans-serif;
-    background-color:#F7F4F4;
-    
+    background-color:#F7F4F4;  
 }
 .calendar-wrap{
     background-color: white;
-    
 }
 header{
     display: flex;
@@ -38,35 +36,40 @@ header a:hover{
 li{
     list-style: none;
 }
-.calNav{
+.cal-nav-wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between ;
     align-items: baseline;
-    /* border: solid green 2px; */
+    background-color: #F7F4F4;
+}
+.cal-nav-wrap button{
+    padding: 5px;
+}
+.cal-nav-wrap h3{
+    margin-bottom: 5px;
+    font-size: 1.5em;
 }
 .cal-nav{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
 }
 .cal-nav-right,
 .cal-nav-left{
     display: flex;
     flex-direction: row;
-   
 }
-
 .calendar-wrap{
     margin: 2em;
 }
 .calendar ol{
     display: grid;
     grid-template-rows: repeat(7, 1fr);
-
 }
+
 .calendar .day{
-    border: solid black 1px;
+    border: solid black 2px;
+
 }
 .week{
     display: flex;
@@ -87,9 +90,9 @@ li{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    flex-wrap: wrap;
+    overflow: hidden;
     justify-content: space-between;
-    
-    
 }
 .post-preview img{
     max-width: 100px;
@@ -107,78 +110,52 @@ li{
 button{
   margin: 3px;
   padding: 0 3px 0 3px;
-  /* background-color: #74CC87; */
+  font-weight: bold;
+  font-size:0.8em;
+  background-color: #67BBF0;
+  color: white;
   border-radius: 2px;
-  border: solid black 1px;
+  border:none;
 }
 button:active {
     transform: translateY(1px);
-    background-color: #74CC87;
+    background-color: #07ffa4;
+    color: black;
     
 }
 footer{
-    position: relative;
+    display: flex;
+    float: row;
+    justify-content: center;
 }
-/* Slider stuff */
-* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 10px;
-  height: 14px;
+.new-post-btn button{
+    background-color: #07ffa4  ;
+    padding: 15px;
+    margin-bottom: 1.5em;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    color: black;
+    border: none;
 }
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+.new-post-btn button:active{
+    text-decoration: underline;
 }
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+@media only screen and (max-width: 480px){
+    section h3{
+     display: none;
+    }
 }
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+checkbox:checked{
+    background-color: green;
 }
-
-input:checked + .slider {
-  background-color: #2196F3;
+input:checked #ready-or-not {
+    background-color: green;
+    color: green;
 }
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 3px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
+#ready-or-not input[type="checkbox"]:checked + label:after {
+    font-weight: bold;
+    background-color: green;
+    color: green;
+  }
