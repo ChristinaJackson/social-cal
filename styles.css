@@ -107,9 +107,9 @@ li{
    /* border: solid green 2px; */
 }
 
-button{
+.cal-nav-wrap button{
   margin: 3px;
-  padding: 0 3px 0 3px;
+  padding: 8px;
   font-weight: bold;
   font-size:0.8em;
   background-color: #67BBF0;
